@@ -8,3 +8,4 @@ Record short ADR-style decisions here.
 | 2026-03-12 | accepted | Keep product, architecture, and task docs in the repo. | Makes each checkpoint restart-safe. |
 | 2026-03-12 | accepted | Start as a docs-first workflow repository before adding stack-specific app code. | The immediate goal is repeatable delivery discipline, not framework sprawl. |
 | 2026-03-12 | accepted | Use PowerShell for the first automation layer. | It matches the current Windows-first environment and keeps setup friction low. |
+| 2026-03-12 | accepted | Keep the repo as a normal starter repository until CI and release flow are stable. | Template mode is useful later, but it hides quality gaps if enabled too early. |

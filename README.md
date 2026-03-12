@@ -6,10 +6,10 @@ Created: `2026-03-12`
 ## Status Dashboard
 
 <!-- STATUS:START -->
-- Current stage: feat
-- Current focus: Local verification and checkpoint hygiene are now enforceable
-- Last checkpoint: 2026-03-12 22:46 | feat: add repository verification workflow
-- Next action: Add a release checklist and decide template publication mode
+- Current stage: docs
+- Current focus: Release flow and publication policy are fixed
+- Last checkpoint: 2026-03-12 22:48 | docs: add release checklist and publication policy
+- Next action: Add GitHub Actions verification workflow
 <!-- STATUS:END -->
 
 ## Verify Commands
@@ -42,5 +42,6 @@ Created: `2026-03-12`
 - `docs/architecture.md`: architecture and tradeoffs
 - `docs/tasks.md`: now / next / later queue
 - `docs/decisions.md`: decision log
+- `docs/release-checklist.md`: release and tagging flow
 - `docs/operating-rules.md`: local working agreement
 - `scripts/checkpoint.ps1`: dashboard and changelog helper

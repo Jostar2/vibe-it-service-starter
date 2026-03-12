@@ -38,5 +38,5 @@ This starter turns vague "keep going later" intentions into an explicit operatin
 
 ## Open Questions
 
-- Should the public starter eventually live as a GitHub template repository or remain a standard starter repo?
 - Which stack-specific starter should be added first after the docs-first baseline is stable?
+- Should CI stop at repository verification first, or also enforce release tag rules later?
