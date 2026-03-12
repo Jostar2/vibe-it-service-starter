@@ -19,6 +19,7 @@ Provide the first stack-specific starter for a typical web-based IT service whil
 - `.env.example`
 - a simple landing page and a health route
 - the same `README`, `CHANGELOG`, `docs`, and checkpoint workflow pattern used by the base repo
+- `/api/health` route handler
 
 ## Explicitly Out of Scope in v1
 
@@ -34,12 +35,17 @@ Provide the first stack-specific starter for a typical web-based IT service whil
 - the variant must include a visible place where service-specific product scope is filled in
 - the variant must not remove the checkpoint helper or repo verification flow
 - the variant must keep the docs-first operating model intact
+- the variant stays hosting-agnostic in v1
 
 ## First Implementation Slice
 
 Scaffold the variant folder, wire the baseline scripts, and prove that the generated repo still passes repository verification.
 
-## Open Decisions for the Variant
+## Current Decisions
 
-- Should the health endpoint be implemented as `/api/health` or a route handler under `app/health`?
-- Should the first scaffold include a sample deploy target such as Vercel config, or stay hosting-agnostic?
+- Health checks live at `/api/health`.
+- The first scaffold stays hosting-agnostic.
+
+## Remaining Open Questions
+
+- Should release CI eventually validate tag naming for variants as well as the root repo?

@@ -39,4 +39,4 @@ This starter turns vague "keep going later" intentions into an explicit operatin
 ## Open Questions
 
 - Should CI stop at repository verification first, or also enforce release tag rules later?
-- Should the first Next.js starter stay hosting-agnostic or include one default deploy target?
+- Which API-focused starter should follow `nextjs-web-starter`?

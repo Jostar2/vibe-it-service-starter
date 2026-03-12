@@ -13,3 +13,5 @@ Record short ADR-style decisions here.
 | 2026-03-12 | accepted | Keep contributor guidance and issue intake inside the repository contract. | Public starter repos need the same continuity rules for external contributors as for the owner. |
 | 2026-03-12 | accepted | Promote the repo to a GitHub template only after `v0.1.0`, stable CI, and one proven release flow. | Template mode should follow a stable starter, not precede it. |
 | 2026-03-12 | accepted | Build `nextjs-web-starter` as the first stack-specific variant. | It is the most common web-service starting point and matches the current local toolchain. |
+| 2026-03-13 | accepted | Keep `nextjs-web-starter` hosting-agnostic in v1. | The first runnable variant should avoid premature deployment lock-in. |
+| 2026-03-13 | accepted | Use `/api/health` as the default health endpoint inside the first variant. | It is the clearest and most portable baseline for service monitoring. |

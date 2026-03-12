@@ -4,17 +4,17 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 
 ## Now
 
-- [ ] Scaffold the `nextjs-web-starter` variant
 - [ ] Decide whether CI should enforce release tag rules in addition to repo verification
+- [ ] Add release automation for version tags
 
 ## Next
 
-- [ ] Add release automation for version tags
-- [ ] Decide whether the first Next.js starter should stay hosting-agnostic or include one deploy target
+- [ ] Decide which API-focused starter should follow `nextjs-web-starter`
+- [ ] Decide whether issue template config should point to Discussions or docs later
 
 ## Later
 
-- [ ] Add stack-specific variants for web app, API, and automation service starts
+- [ ] Add API-focused and automation-focused starter variants
 - [ ] Add starter-specific labels and project board automation
 
 ## Done
@@ -28,6 +28,7 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 - [x] Backported the verify workflow into the internal template repository
 - [x] Added contribution guidance plus issue and PR templates
 - [x] Fixed the GitHub template promotion gate and chose the first stack-specific variant
+- [x] Scaffolded the `nextjs-web-starter` variant with docs, health route, and verification
 
 ## Risks / Blockers
 

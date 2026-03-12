@@ -29,6 +29,5 @@ Why this comes first:
 
 ## Near-Term Exit Criteria
 
-- define the variant contract in `docs/variants/nextjs-web-starter.md`
-- scaffold the first variant with the same checkpoint and verification discipline
+- keep the `nextjs-web-starter` scaffold passing its own repository verification
 - cut `v0.1.0` once the base repo and first variant are both coherent

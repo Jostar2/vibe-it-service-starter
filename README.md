@@ -6,10 +6,10 @@ Created: `2026-03-12`
 ## Status Dashboard
 
 <!-- STATUS:START -->
-- Current stage: docs
-- Current focus: Template promotion criteria and first variant scope are fixed
-- Last checkpoint: 2026-03-12 23:06 | docs: fix template promotion gate and first variant target
-- Next action: Scaffold the nextjs-web-starter variant
+- Current stage: feat
+- Current focus: The first runnable variant is in place and passes verification
+- Last checkpoint: 2026-03-13 08:30 | feat: scaffold nextjs web starter variant
+- Next action: Decide whether CI should enforce release tag rules in addition to repo verification
 <!-- STATUS:END -->
 
 ## Verify Commands
@@ -47,6 +47,7 @@ Created: `2026-03-12`
 - `docs/variants/nextjs-web-starter.md`: first stack-specific variant contract
 - `docs/release-checklist.md`: release and tagging flow
 - `docs/operating-rules.md`: local working agreement
+- `variants/nextjs-web-starter/`: first runnable stack-specific starter
 - `.github/ISSUE_TEMPLATE/`: structured issue intake
 - `.github/pull_request_template.md`: PR checklist
 - `.github/workflows/verify.yml`: remote verification on push and pull request

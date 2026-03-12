@@ -2,7 +2,7 @@
 
 ## System Shape
 
-The first version is a docs-first Git repository with lightweight PowerShell automation. Markdown files hold the project definition and current state. Local scripts handle checkpoint updates and repository verification. Git history and tags are the source of truth for milestones. GitHub is used only as the remote host for backup and sharing, not as the primary workflow engine.
+The repository now has two layers: a docs-first base workflow at the root and stack-specific starter assets under `variants/`. Markdown files hold the project definition and current state. Local scripts handle checkpoint updates and repository verification. Git history and tags are the source of truth for milestones. GitHub is used as the remote host for backup, sharing, and CI enforcement.
 
 ## Boundaries
 
@@ -13,7 +13,7 @@ The first version is a docs-first Git repository with lightweight PowerShell aut
 
 ## First Vertical Slice
 
-Prove that the starter is self-maintaining: a repository verification script checks required files, required marker blocks, and PowerShell script validity. That gives the project one concrete quality gate before more automation or stack-specific code is added.
+The first slice proved the starter is self-maintaining. The second slice proved the approach scales into a stack-specific asset by adding `variants/nextjs-web-starter` with the same checkpoint and verification discipline.
 
 ## Data Flow
 

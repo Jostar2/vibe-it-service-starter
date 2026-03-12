@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Arial, sans-serif;
+  --bg: #f6f3ea;
+  --panel: #fffdf8;
+  --ink: #172126;
+  --accent: #0f766e;
+  --border: #d7d2c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #fff9ed 0%, var(--bg) 55%);
+  color: var(--ink);
+}
+
+code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.page-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.lede {
+  max-width: 64ch;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: 0 20px 40px rgba(23, 33, 38, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+}

@@ -31,26 +31,27 @@ function Test-FileContains {
 
 $repoRoot = Split-Path $PSScriptRoot -Parent
 $requiredFiles = @(
-    "CONTRIBUTING.md",
+    ".env.example",
+    ".gitattributes",
+    ".gitignore",
     "README.md",
     "CHANGELOG.md",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "next-env.d.ts",
+    "next.config.ts",
+    "eslint.config.mjs",
     "docs\brief.md",
     "docs\architecture.md",
     "docs\tasks.md",
     "docs\decisions.md",
-    "docs\roadmap.md",
-    "docs\variants\nextjs-web-starter.md",
+    "docs\release-checklist.md",
     "docs\operating-rules.md",
-    "variants\nextjs-web-starter\README.md",
-    "variants\nextjs-web-starter\package.json",
-    "variants\nextjs-web-starter\package-lock.json",
-    "variants\nextjs-web-starter\app\page.tsx",
-    "variants\nextjs-web-starter\app\api\health\route.ts",
-    "variants\nextjs-web-starter\scripts\verify.ps1",
-    ".github\ISSUE_TEMPLATE\bug_report.md",
-    ".github\ISSUE_TEMPLATE\feature_request.md",
-    ".github\ISSUE_TEMPLATE\config.yml",
-    ".github\pull_request_template.md",
+    "app\layout.tsx",
+    "app\page.tsx",
+    "app\globals.css",
+    "app\api\health\route.ts",
     "scripts\checkpoint.ps1",
     "scripts\verify.ps1"
 )
@@ -99,6 +100,20 @@ if (Test-Path $tasksPath) {
     }
 }
 
+$packageJsonPath = Join-Path $repoRoot "package.json"
+if (Test-Path $packageJsonPath) {
+    $packageJson = Get-Content -Path $packageJsonPath -Raw | ConvertFrom-Json
+    $requiredScripts = @("dev", "build", "start", "lint")
+    foreach ($requiredScript in $requiredScripts) {
+        if ($packageJson.scripts.$requiredScript) {
+            Add-Result -Bucket $passes -Message "package.json script '$requiredScript' is present"
+        }
+        else {
+            Add-Result -Bucket $failures -Message "package.json is missing the '$requiredScript' script"
+        }
+    }
+}
+
 $scriptFiles = Get-ChildItem -Path (Join-Path $repoRoot "scripts") -Filter *.ps1 -File
 foreach ($script in $scriptFiles) {
     $tokens = $null
@@ -112,17 +127,6 @@ foreach ($script in $scriptFiles) {
     }
     else {
         Add-Result -Bucket $passes -Message "parsed $($script.Name)"
-    }
-}
-
-$variantVerifyPath = Join-Path $repoRoot "variants\nextjs-web-starter\scripts\verify.ps1"
-if (Test-Path $variantVerifyPath) {
-    try {
-        & powershell -ExecutionPolicy Bypass -File $variantVerifyPath | Out-Null
-        Add-Result -Bucket $passes -Message "variant verification passed for nextjs-web-starter"
-    }
-    catch {
-        Add-Result -Bucket $failures -Message "variant verification failed for nextjs-web-starter"
     }
 }
 
