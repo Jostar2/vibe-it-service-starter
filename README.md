@@ -6,10 +6,10 @@ Created: `2026-03-12`
 ## Status Dashboard
 
 <!-- STATUS:START -->
-- Current stage: docs
-- Current focus: Release flow and publication policy are fixed
-- Last checkpoint: 2026-03-12 22:48 | docs: add release checklist and publication policy
-- Next action: Add GitHub Actions verification workflow
+- Current stage: feat
+- Current focus: Local and remote verification are both active
+- Last checkpoint: 2026-03-12 22:49 | feat: add GitHub Actions verification workflow
+- Next action: Backport the verify workflow into the internal template repository
 <!-- STATUS:END -->
 
 ## Verify Commands
@@ -44,4 +44,5 @@ Created: `2026-03-12`
 - `docs/decisions.md`: decision log
 - `docs/release-checklist.md`: release and tagging flow
 - `docs/operating-rules.md`: local working agreement
+- `.github/workflows/verify.yml`: remote verification on push and pull request
 - `scripts/checkpoint.ps1`: dashboard and changelog helper

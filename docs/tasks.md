@@ -5,12 +5,12 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 ## Now
 
 - [ ] Backport the verify workflow into the internal template repository
-- [ ] Add CI to run repository verification on push
+- [ ] Add contribution and issue templates
 
 ## Next
 
-- [ ] Add contribution and issue templates
 - [ ] Decide when to convert the repo into a GitHub template after CI is stable
+- [ ] Choose the first stack-specific starter variant
 
 ## Later
 
@@ -24,8 +24,9 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 - [x] Locked the baseline architecture and first implementation slice
 - [x] Added local repository verification and concrete verify commands
 - [x] Added a release checklist and kept the repo in standard starter mode for now
+- [x] Added GitHub Actions verification on push and pull request
 
 ## Risks / Blockers
 
-- The workflow is still local-first until CI enforces verification on remote pushes.
+- The internal template repository has not been backfilled with the new verification flow yet.
 - GitHub template mode is deferred until the release flow and CI are stable.
