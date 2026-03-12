@@ -4,23 +4,25 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 
 ## Now
 
-- [ ] Fill `docs/brief.md`
-- [ ] Decide the first vertical slice
+- [ ] Add `scripts/verify.ps1` to validate the repo contract locally
+- [ ] Update `README.md` with the real verification commands for this starter
 
 ## Next
 
-- [ ] Draft `docs/architecture.md`
-- [ ] Configure the verification commands in `README.md`
+- [ ] Add a release checklist for checkpoint tags and version tags
+- [ ] Decide whether to publish this repo as a GitHub template repository
 
 ## Later
 
-- [ ] Add the first user-visible feature slice
-- [ ] Add a release checklist
+- [ ] Add stack-specific variants for web app, API, and automation service starts
+- [ ] Add CI to run the repository verification script on push
 
 ## Done
 
 - [x] Scaffolded the service workspace on `2026-03-12`
+- [x] Locked the product problem, target users, and MVP
+- [x] Locked the baseline architecture and first implementation slice
 
 ## Risks / Blockers
 
-- Git CLI is required for commits and tags.
+- The workflow is still local-first until CI enforces verification.

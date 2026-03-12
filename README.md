@@ -6,10 +6,10 @@ Created: `2026-03-12`
 ## Status Dashboard
 
 <!-- STATUS:START -->
-- Current stage: init
-- Current focus: Define the problem, target user, and MVP.
-- Last checkpoint: 2026-03-12 | init: scaffold service workspace
-- Next action: Fill `docs/brief.md` and create the first `docs` checkpoint.
+- Current stage: docs
+- Current focus: Baseline scope, architecture, and first slice are fixed
+- Last checkpoint: 2026-03-12 22:44 | docs: lock scope and architecture baseline
+- Next action: Add scripts/verify.ps1 for local repo validation
 <!-- STATUS:END -->
 
 ## Verify Commands
