@@ -4,13 +4,13 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 
 ## Now
 
-- [ ] Decide when to convert the repo into a GitHub template after CI is stable
-- [ ] Choose the first stack-specific starter variant
+- [ ] Scaffold the `nextjs-web-starter` variant
+- [ ] Decide whether CI should enforce release tag rules in addition to repo verification
 
 ## Next
 
 - [ ] Add release automation for version tags
-- [ ] Decide whether issue template config should point to Discussions or docs later
+- [ ] Decide whether the first Next.js starter should stay hosting-agnostic or include one deploy target
 
 ## Later
 
@@ -27,6 +27,7 @@ Use this file as the canonical queue. Move items between sections; do not duplic
 - [x] Added GitHub Actions verification on push and pull request
 - [x] Backported the verify workflow into the internal template repository
 - [x] Added contribution guidance plus issue and PR templates
+- [x] Fixed the GitHub template promotion gate and chose the first stack-specific variant
 
 ## Risks / Blockers
 

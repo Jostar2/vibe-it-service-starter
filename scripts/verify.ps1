@@ -38,6 +38,8 @@ $requiredFiles = @(
     "docs\architecture.md",
     "docs\tasks.md",
     "docs\decisions.md",
+    "docs\roadmap.md",
+    "docs\variants\nextjs-web-starter.md",
     "docs\operating-rules.md",
     ".github\ISSUE_TEMPLATE\bug_report.md",
     ".github\ISSUE_TEMPLATE\feature_request.md",

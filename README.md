@@ -6,10 +6,10 @@ Created: `2026-03-12`
 ## Status Dashboard
 
 <!-- STATUS:START -->
-- Current stage: feat
-- Current focus: Contributor intake and review guidance are now structured
-- Last checkpoint: 2026-03-12 23:03 | feat: add contributor workflow templates
-- Next action: Choose the first stack-specific starter variant
+- Current stage: docs
+- Current focus: Template promotion criteria and first variant scope are fixed
+- Last checkpoint: 2026-03-12 23:06 | docs: fix template promotion gate and first variant target
+- Next action: Scaffold the nextjs-web-starter variant
 <!-- STATUS:END -->
 
 ## Verify Commands
@@ -43,6 +43,8 @@ Created: `2026-03-12`
 - `docs/architecture.md`: architecture and tradeoffs
 - `docs/tasks.md`: now / next / later queue
 - `docs/decisions.md`: decision log
+- `docs/roadmap.md`: template promotion gate and variant sequence
+- `docs/variants/nextjs-web-starter.md`: first stack-specific variant contract
 - `docs/release-checklist.md`: release and tagging flow
 - `docs/operating-rules.md`: local working agreement
 - `.github/ISSUE_TEMPLATE/`: structured issue intake

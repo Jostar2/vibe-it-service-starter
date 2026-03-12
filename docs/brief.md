@@ -38,5 +38,5 @@ This starter turns vague "keep going later" intentions into an explicit operatin
 
 ## Open Questions
 
-- Which stack-specific starter should be added first after the docs-first baseline is stable?
 - Should CI stop at repository verification first, or also enforce release tag rules later?
+- Should the first Next.js starter stay hosting-agnostic or include one default deploy target?

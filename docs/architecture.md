@@ -30,4 +30,4 @@ Prove that the starter is self-maintaining: a repository verification script che
 ## Risks
 
 - The process can feel heavy if every small experiment is treated like a checkpoint.
-- Without CI, users can still skip local verification unless the workflow is enforced by habit.
+- Variant growth can turn the repo into a framework grab bag unless each starter keeps a tight v1 boundary.
