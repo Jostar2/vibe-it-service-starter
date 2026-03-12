@@ -6,20 +6,18 @@ Created: `2026-03-12`
 ## Status Dashboard
 
 <!-- STATUS:START -->
-- Current stage: docs
-- Current focus: Baseline scope, architecture, and first slice are fixed
-- Last checkpoint: 2026-03-12 22:44 | docs: lock scope and architecture baseline
-- Next action: Add scripts/verify.ps1 for local repo validation
+- Current stage: feat
+- Current focus: Local verification and checkpoint hygiene are now enforceable
+- Last checkpoint: 2026-03-12 22:46 | feat: add repository verification workflow
+- Next action: Add a release checklist and decide template publication mode
 <!-- STATUS:END -->
 
 ## Verify Commands
 
-Replace the placeholders below as soon as the stack is selected.
-
 <!-- VERIFY:START -->
-- lint: not configured
-- typecheck: not configured
-- test: not configured
+- structure: `powershell -ExecutionPolicy Bypass -File .\scripts\verify.ps1`
+- whitespace: `git diff --check`
+- status: `git status --short`
 <!-- VERIFY:END -->
 
 ## Resume This Project

@@ -124,7 +124,8 @@ function Get-NextCheckpointTag {
 
     $nextNumber = if ($numbers) { (($numbers | Measure-Object -Maximum).Maximum + 1) } else { 1 }
     $slug = ConvertTo-Slug -Value $Summary
-    return ("cp-{0:D2}-{1}-{2}" -f $nextNumber, $Type, $slug)
+    $numberText = ([int]$nextNumber).ToString("00")
+    return "cp-$numberText-$Type-$slug"
 }
 
 $repoRoot = Split-Path $PSScriptRoot -Parent
