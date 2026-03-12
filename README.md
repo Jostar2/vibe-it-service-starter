@@ -7,9 +7,9 @@ Created: `2026-03-12`
 
 <!-- STATUS:START -->
 - Current stage: feat
-- Current focus: Local and remote verification are both active
-- Last checkpoint: 2026-03-12 22:49 | feat: add GitHub Actions verification workflow
-- Next action: Backport the verify workflow into the internal template repository
+- Current focus: Contributor intake and review guidance are now structured
+- Last checkpoint: 2026-03-12 23:03 | feat: add contributor workflow templates
+- Next action: Choose the first stack-specific starter variant
 <!-- STATUS:END -->
 
 ## Verify Commands
@@ -38,11 +38,14 @@ Created: `2026-03-12`
 
 ## Repo Map
 
+- `CONTRIBUTING.md`: contributor workflow and local verification contract
 - `docs/brief.md`: product definition
 - `docs/architecture.md`: architecture and tradeoffs
 - `docs/tasks.md`: now / next / later queue
 - `docs/decisions.md`: decision log
 - `docs/release-checklist.md`: release and tagging flow
 - `docs/operating-rules.md`: local working agreement
+- `.github/ISSUE_TEMPLATE/`: structured issue intake
+- `.github/pull_request_template.md`: PR checklist
 - `.github/workflows/verify.yml`: remote verification on push and pull request
 - `scripts/checkpoint.ps1`: dashboard and changelog helper

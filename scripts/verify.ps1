@@ -31,6 +31,7 @@ function Test-FileContains {
 
 $repoRoot = Split-Path $PSScriptRoot -Parent
 $requiredFiles = @(
+    "CONTRIBUTING.md",
     "README.md",
     "CHANGELOG.md",
     "docs\brief.md",
@@ -38,6 +39,10 @@ $requiredFiles = @(
     "docs\tasks.md",
     "docs\decisions.md",
     "docs\operating-rules.md",
+    ".github\ISSUE_TEMPLATE\bug_report.md",
+    ".github\ISSUE_TEMPLATE\feature_request.md",
+    ".github\ISSUE_TEMPLATE\config.yml",
+    ".github\pull_request_template.md",
     "scripts\checkpoint.ps1",
     "scripts\verify.ps1"
 )
